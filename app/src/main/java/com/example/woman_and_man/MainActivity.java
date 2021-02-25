@@ -4,26 +4,27 @@ package com.example.woman_and_man;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.woman_and_man.FactoryMode.FactoryMode;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
-    Button success_bt, failing_bt, am_bt;
+    Button success_bt, failing_bt, am_bt,factory_mode;
     TextView tv_states;
     ArrayList<String> states = new ArrayList<>();
     ObjectStructure u = new ObjectStructure();
-    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        context=this.context;
         init();
 
         //u.Add(new Woman());
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
         Singleton_test.getInstance().showDialog(context);
     }
     private void init() {
+        factory_mode=findViewById(R.id.factory_mode_id);
+        factory_mode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FactoryMode.class));
+            }
+        });
         success_bt = findViewById(R.id.success_bt);
         tv_states = findViewById(R.id.tv_states);
         success_bt.setOnClickListener(new View.OnClickListener() {

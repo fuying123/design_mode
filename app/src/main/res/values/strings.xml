@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">woman_and_man</string>
+    <string name="factory_mode">"简单工厂模式"</string>
+    <string name="add">"加法"</string>
+    <string name="sub">"减法"</string>
+    <string name="multip">"乘法"</string>
+    <string name="divi">"除法"</string>
 </resources>

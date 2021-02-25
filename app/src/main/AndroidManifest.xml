@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.woman_and_man.FactoryMode.FactoryMode">
+        </activity>
     </application>
 
 </manifest>
