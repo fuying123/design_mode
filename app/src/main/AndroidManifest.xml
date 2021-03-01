@@ -18,6 +18,15 @@
         </activity>
         <activity android:name="com.example.woman_and_man.FactoryMode.FactoryMode">
         </activity>
+        <activity android:name="com.example.woman_and_man.StrategyMode.StrategyMode">
+        </activity>
+        <activity android:name="com.example.woman_and_man.DecoMode.DecoMode">
+        </activity>
+        <activity android:name="com.example.woman_and_man.VisitorMode.VisitorMode">
+        </activity>
+        <activity android:name="com.example.woman_and_man.SingletonMode.SingleMode">
+    </activity>
+
     </application>
 
 </manifest>
